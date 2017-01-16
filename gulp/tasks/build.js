@@ -9,13 +9,13 @@ gulp.task('previewDist', function() {
 	browserSync.init({
 		notify: false,
 		server: {
-			baseDir: dist
+			baseDir: docs
 		}
 	});
 });
 
 gulp.task('clearDist', function() {
-	del('./dist');
+	del('./docs');
 });
 
 gulp.task('copyGeneralFiles', ['clearDist'], function() {
@@ -29,7 +29,7 @@ gulp.task('copyGeneralFiles', ['clearDist'], function() {
   ]
 
   return gulp.src(pathsToCopy)
-  			.pipe(gulp.dest('./dist'));
+  			.pipe(gulp.dest('./docs'));
 });
 
 gulp.task('usemin', ['styles', 'scripts'], function() {
@@ -38,7 +38,7 @@ gulp.task('usemin', ['styles', 'scripts'], function() {
 				css: [function() {return rev()}, function() {return cssnano()}],
 				js: [function() {return rev()}, function() {return uglify()}]
 			}))
-			.pipe(gulp.dest('./dist'))
+			.pipe(gulp.dest('./docs'))
 });
 
 gulp.task('build', ['copyGeneralFiles', 'usemin']);
