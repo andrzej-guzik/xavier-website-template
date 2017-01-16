@@ -1,0 +1,43 @@
+ .our-services {
+	 background-color: $light;
+	 cursor: default;
+
+	 &__item {
+		 text-align: center;
+		 padding-bottom: 25px;
+
+		 @mixin atMedium {
+			text-align: left;
+		 	padding-bottom: 0;
+		 }
+
+		 figure {
+		 margin: 0;
+		 padding: 0;
+		 overflow: hidden;
+		 }
+
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 450px;
+			transition: all .3s ease-out;
+			
+			@mixin atMedium {
+				max-width: 100%;
+			}
+		}
+
+		&:hover img {
+			@mixin atMedium {
+				transform: scale(1.15) translateX(5%);
+			}
+		}
+
+		&__title {
+			margin-top: 15px;
+			font-size: 1.5rem;
+		}
+	 }
+
+ }

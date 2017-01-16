@@ -1,0 +1,31 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: $bodyFont;
+	font-weight: 400;
+	line-height: 1.4;
+	color: $bodyTextColor;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: $headersFont;
+	font-size: 3rem;
+	color: $headersColor;
+	font-weight: 300;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $linksColor;
+}
+
+img {
+	max-width: 100%;
+}

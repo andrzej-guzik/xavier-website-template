@@ -1,0 +1,40 @@
+.btn {
+	display: block;
+	width: 180px;
+	padding: 8px 0;
+	background: $btnColor;
+	color: $btnTextColor;
+	text-align: center;
+	font-family: $fontFamilyPrimary;
+	font-weight: 600;
+	font-size: 1rem;
+	text-transform: uppercase;
+	transition: all .5s ease-out;
+	border: 1px solid transparent;
+	border-radius: 45px;
+
+	&--large {
+		padding: 13px 0;
+		width: 20rem;
+	}
+
+	&--center {
+		margin: 0 auto;
+	}
+
+	&--hollow {
+		border: 2px solid $light;
+		background: transparent;
+		&:hover {
+		background: $btnColor;
+		}
+	}
+
+	&--hollow-alt {
+		border: 2px solid $light;
+		background: transparent;
+		&:hover {
+		background: rgba($light, .15);
+		}
+	}
+}

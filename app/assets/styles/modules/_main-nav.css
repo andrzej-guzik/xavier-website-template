@@ -1,0 +1,74 @@
+.main-nav {
+	opacity: 0;
+	z-index: -2;
+	position: absolute;
+	transition: transform 0.3s ease-out;
+	transform: scale(1.3);
+
+	@mixin atLarge {
+		@mixin clearfix;
+		opacity: 1;
+		position: relative;
+		z-index: 99;
+		transform: scale(1);
+	}
+
+	&--pull-right {
+		@mixin atLarge {
+			float: right;
+		}
+	}
+
+	&--is-expanded {
+		transform: scale(1);
+		opacity: 1;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		background: #f7f8f9;
+		width: 100%;
+		padding: 95px 0;
+	}
+
+	ul {
+		margin: 0;
+		list-style: none;
+		padding-top: 15px;
+
+		li {
+			text-align: center;
+			padding: 25px 0;
+			border-bottom: 1px solid rgba($dark, .2);
+			
+			@mixin atLarge {
+				display: inline-block;
+				border-bottom: none;
+				text-align: left;
+				padding: 0;
+				padding-bottom: 15px;
+				&:hover {
+					border-bottom: 1px solid $accentColor;
+				}
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+
+			a {
+				font-size: 1.125rem;
+				border-bottom: 2px solid transparent;
+				transition: all .4s ease-in;
+				padding: 15px 8px;
+
+				@mixin atLarge {
+					border: none;
+					padding: 0 18px;
+					&:last-child {
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

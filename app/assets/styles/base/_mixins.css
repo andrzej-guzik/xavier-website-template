@@ -1,0 +1,46 @@
+@define-mixin atSmall {
+	@media(min-width: $small) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atExtraSmall {
+	@media(max-width: $small) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium {
+	@media(min-width: $medium) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge{
+	@media(min-width: $large) {
+		@mixin-content;
+	}
+}
+
+@define-mixin clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+}
+
+@define-mixin overlay $color: $overlayColor {
+	position: relative;
+	z-index: 1;
+	&::after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background: rgba($color, 0.6);
+	}
+}

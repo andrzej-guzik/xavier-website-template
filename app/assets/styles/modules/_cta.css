@@ -1,0 +1,20 @@
+.cta {
+    background: $accentColor;
+    padding: 65px 0;
+    margin: 0;
+
+    &__title { 
+        text-align: center;
+        color: $light;
+        padding-bottom: 55px;
+        font-size: 1.6rem;
+
+        @mixin atMedium {
+        font-size: 2.25rem; 
+        }
+
+        strong {
+          font-weight: 700;
+        }
+    }   
+}

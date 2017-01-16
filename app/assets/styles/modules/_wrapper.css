@@ -1,0 +1,12 @@
+.wrapper {
+	padding: 0 25px;
+	max-width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+	@mixin atMedium {
+		padding: 0 45px;
+	}
+	@mixin atLarge {
+		padding: 0;
+	}
+}

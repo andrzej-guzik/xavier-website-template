@@ -1,0 +1,48 @@
+.testimonials {
+    background: $light;
+
+    &__item {
+        padding: 35px 5px;
+
+        @mixin atMedium {
+            padding: 45px 5px;
+            background: #fff;
+        }
+
+        &:hover img {
+            transform: scale(1.03);
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-bottom: 35px;
+            transition: all 0.3s ease-out;
+
+        }
+
+        &__icon {
+            display: block;
+            text-align: center;
+            padding-bottom: 8px;
+			
+            @mixin atMedium {
+                padding-bottom: 25px;
+            }
+        }
+
+        &__text {
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 25px;
+            }
+
+        &__name {
+            margin-top: 25px;
+            font-weight: 700;
+        }
+    }
+}

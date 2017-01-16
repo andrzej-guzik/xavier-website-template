@@ -1,0 +1,33 @@
+.social-icons {
+	position: relative;
+	display: inline-block;
+	border: 2px solid $iconBorderColor;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;	
+	transition: all .3s ease-out;
+
+	&:hover {
+		color: $light;
+		background-color: $accentColor;
+		border: 2px solid transparent;
+	}
+	
+	&__item {
+		position: absolute;
+		line-height: 40px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 1.125rem;		
+	}
+
+	&--light {
+		color: $light;
+		border: 2px solid $light;
+		&:hover {
+			color: $accentColor;
+			background-color: $light;
+			border: 2px solid transparent;
+		}
+	}
+}

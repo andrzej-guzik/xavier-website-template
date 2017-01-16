@@ -1,0 +1,34 @@
+.hero {
+	background: url('../../assets/images/architecture-1515475_1920.jpg') center center no-repeat;
+	background-size: cover;
+	@mixin overlay;
+	width: 100%;
+	min-height: 580px;
+	height: calc(100vh - 128px);
+
+	&__title, &__subtitle {
+		margin: 0;
+		text-align: center;
+		color: $light;
+		font-family: $heroFont;
+	}
+	&__title {
+		padding-top: 30%;
+		font-size: 2.2rem;
+		font-weight: 700;
+		
+		@mixin atMedium {
+			padding-top: 10%;
+			font-size: 3.75rem;
+		}
+	}
+
+	&__subtitle {
+		font-size: 1.5rem;
+		margin-bottom: 85px;
+
+		@mixin atMedium {
+			margin-bottom: 65px;
+		}
+	}
+}

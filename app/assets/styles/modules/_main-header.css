@@ -1,0 +1,69 @@
+.main-header {
+	@mixin clearfix;
+	background-color: $headerBg;
+	position: relative;	
+
+	@mixin atLarge {
+		height: 128px;
+	}
+
+	&__logo {
+		float: left;
+		h1 {
+			font-family: $logoFont;
+			font-size: 2.85rem;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			font-weight: 400;
+			@mixin atLarge {
+				line-height: 128px;
+			}
+		}
+	}
+
+	&__hamburger-button {
+		position: absolute;
+		right: 25px;
+		font-size: 2.25rem;
+		cursor: pointer;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 99;
+		@mixin atLarge {
+			display: none;
+		}
+	}
+
+	&__top {
+		@mixin clearfix;
+		opacity: 0;
+		visibility: hidden;
+		height: 66px;
+
+		@mixin atLarge {
+			opacity: 1;
+			visibility: visible;
+			padding-top: 15px;
+			margin-left: 46%;
+			height: 64px;
+		}
+
+		&__phone {
+			float: left;
+			p {
+				font-size: 1.25rem;
+				margin: 0;
+				line-height: 50px;
+				strong {
+					color: $accentColor;
+				}
+			}
+		}
+
+		&__social {
+			float: right;
+		}
+	}
+}

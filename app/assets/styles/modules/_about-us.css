@@ -1,0 +1,33 @@
+.about-us {
+    &__title {
+        font-size: 1.5rem;
+    }
+
+    &__subtitle {
+        font-style: italic;
+    }
+
+    &__icon {
+        font-size: 1.1rem;
+        color: $accentColor;
+        padding-right: 4px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        padding-top: 15px;
+
+        li {
+            display: inline-block;
+            list-style: none;
+            padding-right: 15px;
+			
+            @mixin atExtraSmall {
+                 display: block;
+                 text-align: center;
+                 padding-bottom: 25px;
+            }
+        }
+    }
+}

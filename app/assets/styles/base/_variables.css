@@ -1,0 +1,34 @@
+/* ***********************
+/* 		Breakpoints 	*/
+$small: 560px;
+$medium: 960px;
+$large: 1200px;
+
+/* ***********************
+/* 		Colors 			*/
+$accentColor: #364c5e;
+$darkGrey: #555555;
+$dark: #222222;
+$asphalt: #43454e;
+$light: #f7f8f9;
+
+$headersColor: $accentColor;
+$bodyTextColor: $darkGrey;
+$headerBg: $light;
+$footerBg: $asphalt;
+$iconBorderColor: $darkGrey;
+$linksColor: $accentColor;
+$btnColor: $accentColor;
+$btnTextColor: $light;
+$overlayColor: $dark;
+
+/* ***********************
+/* 			Fonts 		*/
+$fontFamilySpecial: 'Montserrat', sans-serif;
+$fontFamilyPrimary: 'Raleway', sans-serif;
+$fontFamilySecondary: 'Open Sans', sans-serif;
+
+$headersFont: $fontFamilyPrimary;
+$bodyFont: $fontFamilySecondary;
+$heroFont: $fontFamilySpecial;
+$logoFont: 'Monoton', sans-serif;
