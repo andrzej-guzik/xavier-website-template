@@ -3,6 +3,11 @@
         font-size: 1.5rem;
     }
 
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
     &__subtitle {
         font-style: italic;
     }
@@ -22,7 +27,7 @@
             display: inline-block;
             list-style: none;
             padding-right: 15px;
-			
+
             @mixin atExtraSmall {
                  display: block;
                  text-align: center;

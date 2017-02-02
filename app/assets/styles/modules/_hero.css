@@ -1,5 +1,5 @@
 .hero {
-	background: url('../../assets/images/architecture-1515475_1920.jpg') center center no-repeat;
+	background: url('../../assets/images/architecture-1515475.jpg') center center no-repeat;
 	background-size: cover;
 	@mixin overlay;
 	width: 100%;
@@ -16,7 +16,7 @@
 		padding-top: 30%;
 		font-size: 2.2rem;
 		font-weight: 700;
-		
+
 		@mixin atMedium {
 			padding-top: 10%;
 			font-size: 3.75rem;
