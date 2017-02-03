@@ -813,7 +813,6 @@ img {
 .our-services {
 	 background-color: #f7f8f9;
 	 cursor: default;
-
  }
 .our-services__item {
   text-align: center;
@@ -844,8 +843,8 @@ img {
 }
 @media(min-width: 960px){
   .our-services__item:hover img{
-    -webkit-transform: scale(1.15) translateX(5%);
-            transform: scale(1.15) translateX(5%);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 .our-services__item__title {

@@ -22,7 +22,7 @@
 			margin: 0 auto;
 			max-width: 450px;
 			transition: all .3s ease-out;
-			
+
 			@mixin atMedium {
 				max-width: 100%;
 			}
@@ -30,7 +30,7 @@
 
 		&:hover img {
 			@mixin atMedium {
-				transform: scale(1.15) translateX(5%);
+				transform: scale(1.05);
 			}
 		}
 
@@ -39,5 +39,4 @@
 			font-size: 1.5rem;
 		}
 	 }
-
  }
